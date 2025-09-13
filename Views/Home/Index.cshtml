@@ -1,0 +1,69 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<!-- Container for the registration form -->
+<div class="container" id="container">
+    <!-- Title of the form -->
+    <div class="title">Registration Form</div>
+    <hr>
+    <div class="content">
+        <!-- Registration form -->
+        <form action="#">
+            <div class="user-details">
+                <!-- Input box for full name -->
+                <div class="input-box">
+                    <span class="details">First Name</span>
+                    <input type="text" placeholder="Enter your first name">
+                </div>
+                <!-- Input box for username -->
+                <div class="input-box">
+                    <span class="details">Last Name</span>
+                    <input type="text" placeholder="Enter your last name">
+                </div>
+                <!-- Input box for email -->
+                <div class="input-box email-container">
+                    <span class="details">Email</span>
+                    <input id="email-input" type="text" placeholder="Enter your email">
+                    <span id="tooltiptext">Hint*:  your_name@gmail.com</span>
+                </div>
+                <!-- Input box for password -->
+                <div class="input-box">
+                    <span class="details">Password</span>
+                    <input type="password" placeholder="Enter your password">
+                </div>
+                <!-- Input box for confirming password -->
+                <div class="input-box">
+                    <span class="details">City Name </span>
+                    <input type="text" placeholder="Enter Your City">
+                </div>
+                <!-- Input box for date of birth -->
+                <div class="input-box ">
+                    <span class="details">Gender </span>
+                    <div class="radioButtons">
+                        <input type="radio" name="gender">  Male
+                        <input type="radio" name="gender">  Female
+                    </div>
+                </div>
+                <div class="input-box ">
+                    <span class="details">Select Your Study</span>
+                    <select>
+                        <option value="BA">BA</option>
+                        <option value="MAster">Master</option>
+                        <option value="PhD">PhD</option>
+                    </select>
+                </div>
+
+            </div>
+            <!-- Button container -->
+            <div class="button-container">
+                <div class="button">
+                    <!-- Submit button -->
+                    <input id="save-btn" type="submit" value="Save">
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+<script src="/js/site.js"></script>
